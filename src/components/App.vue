@@ -139,7 +139,7 @@ export default {
   font-family: 'Orbitron', sans-serif;
   cursor: pointer;
   width: 100%;
-  height: 80px;
+  height: 70px;
   background: #797d6eb0;
   position: fixed;
   top: 0;

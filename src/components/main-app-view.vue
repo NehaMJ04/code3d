@@ -26,13 +26,13 @@
               <option value="3d">Gemini 1.5 Pro</option>
               <option value="animation">DeepSeek-Coder 1.5</option>
             </select>
-            <div class="select-icon">▼</div>
+            <!-- <div class="select-icon">▼</div> -->
           </div>
           <button @click="attachFile" class="attach-btn ml-2">
-            <div class="attach-icon">📎</div>
+            <!-- <div class="attach-icon">📎</div> -->
           </button>
           <button @click="submitCode" class="send-btn ml-2">
-            <div class="send-icon">→</div>
+            <!-- <div class="send-icon">→</div> -->
           </button>
         </div>
       </div>
@@ -131,7 +131,7 @@ export default {
   border-radius: 10px;
   height: 100vh;
   /* background-color: #c6ccc0; */
-  background-color: #afb4a9;
+  background-color: #abb2a4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +184,7 @@ h1 {
 
 .share-btn {
   font-family: 'Orbitron', sans-serif;
-  color: #000;
+  color: #4a4a4a;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -200,11 +200,11 @@ h1 {
 textarea {
   background-color: #c1c7ba;
   border: none;
-  padding: 20px;
+  padding: 25px;
   font-family: 'Orbitron', sans-serif;
   color: #4a4a4a;
   resize: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 textarea::placeholder {
@@ -235,7 +235,7 @@ select {
   -moz-appearance: none;
   padding-right: 30px;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
 }
 
 .select-icon {
