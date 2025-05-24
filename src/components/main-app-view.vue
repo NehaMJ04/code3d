@@ -30,9 +30,11 @@
           </div>
           <button @click="attachFile" class="attach-btn ml-2">
             <!-- <div class="attach-icon">📎</div> -->
+            <Paperclip :size="20" stroke-width="2" />
           </button>
           <button @click="submitCode" class="send-btn ml-2">
             <!-- <div class="send-icon">→</div> -->
+            <Send :size="20" stroke-width="2" />
           </button>
         </div>
       </div>
@@ -41,8 +43,14 @@
 </template>
 
 <script>
+import { Send, Paperclip } from 'lucide-vue-next';
+
 export default {
   name: 'MainAppView',
+  components: {
+    Send,
+    Paperclip
+  },
   data() {
     return {
       codeInput: '',
@@ -259,10 +267,6 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.attach-icon {
-  font-size: 18px;
   color: #4a4a4a;
 }
 
@@ -276,10 +280,26 @@ select {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color:#4a4a4a;
+}
+.attach-btn:hover{
+  /* transform: translateY(-1px); */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background: #abb2a4;
+
+}
+.send-btn:hover{
+  /* transform: translateY(-1px); */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background: #abb2a4;
+
+}
+.form-control:hover{
+  /* transform: translateY(-1px); */
+  color: #393737; 
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background: #abb2a4;
+
 }
 
-.send-icon {
-  font-size: 22px;
-  color: #4a4a4a;
-}
 </style>

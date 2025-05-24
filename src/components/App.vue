@@ -190,15 +190,15 @@ h1 {
 
 .try-button {
   background-color: #000;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 12px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    font-family: 'Orbitron', sans-serif;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .try-button:hover {
